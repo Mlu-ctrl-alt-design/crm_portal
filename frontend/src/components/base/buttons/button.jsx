@@ -17,29 +17,25 @@ const sizeStyles = {
 const colorStyles = {
     primary: [
         "bg-brand-600 text-white shadow-xs-skeumorphic",
-        "hover:bg-brand-700",
-        "pressed:bg-brand-700",
+        "hover:bg-brand-700 active:bg-brand-700",
         "disabled:bg-gray-100 disabled:text-gray-400 disabled:shadow-none",
     ].join(" "),
 
     secondary: [
         "bg-white text-gray-700 shadow-xs ring-1 ring-inset ring-gray-300",
-        "hover:bg-gray-50 hover:text-gray-800",
-        "pressed:bg-gray-50",
+        "hover:bg-gray-50 hover:text-gray-800 active:bg-gray-100",
         "disabled:bg-white disabled:text-gray-300 disabled:ring-gray-200 disabled:shadow-none",
     ].join(" "),
 
     tertiary: [
         "text-gray-600",
-        "hover:bg-gray-50 hover:text-gray-700",
-        "pressed:bg-gray-50",
+        "hover:bg-gray-50 hover:text-gray-700 active:bg-gray-100",
         "disabled:text-gray-300",
     ].join(" "),
 
     "primary-destructive": [
         "bg-error-600 text-white shadow-xs-skeumorphic",
-        "hover:bg-error-700",
-        "pressed:bg-error-700",
+        "hover:bg-error-700 active:bg-error-700",
         "disabled:bg-gray-100 disabled:text-gray-400 disabled:shadow-none",
     ].join(" "),
 

@@ -29,8 +29,8 @@ export function ControlledModal({ isOpen, onClose, title, children }) {
                     "fixed inset-0 z-50 flex min-h-dvh w-full items-end justify-center overflow-y-auto",
                     "bg-black/50 px-4 pt-4 pb-[clamp(16px,8vh,64px)] outline-hidden backdrop-blur-sm",
                     "sm:items-center sm:justify-center sm:p-8",
-                    isEntering && "duration-200 ease-out animate-in fade-in",
-                    isExiting && "duration-150 ease-in animate-out fade-out",
+                    "transition-opacity duration-200",
+                    (isEntering || isExiting) ? "opacity-0" : "opacity-100",
                 )
             }
         >
@@ -38,8 +38,8 @@ export function ControlledModal({ isOpen, onClose, title, children }) {
                 className={({ isEntering, isExiting }) =>
                     cx(
                         "max-h-full w-full max-w-lg outline-hidden",
-                        isEntering && "duration-200 ease-out animate-in zoom-in-95 slide-in-from-bottom-4",
-                        isExiting && "duration-150 ease-in animate-out zoom-out-95 slide-out-to-bottom-4",
+                        "transition-all duration-200",
+                        (isEntering || isExiting) ? "opacity-0 scale-95" : "opacity-100 scale-100",
                     )
                 }
             >
