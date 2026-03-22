@@ -1,0 +1,3 @@
+# Frappe manages its own dependencies — no version pin needed here.
+# When installing via bench, run: bench get-app custom_crm_api <repo-url>
+frappe

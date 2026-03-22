@@ -1,0 +1,14 @@
+/* Tailwind CSS v4 directives */
+@import "tailwindcss";
+
+/*
+ * Design token overrides go inside @theme below.
+ * Untitled UI component tokens go here once installed via CLI:
+ *   npx @untitled-ui/react init
+ * See: https://www.untitledui.com/react/docs
+ *
+ * Example:
+ * @theme {
+ *   --color-primary-500: #7F56D9;
+ * }
+ */
