@@ -54,6 +54,9 @@ Frappe (`localhost:8000`), you must enable CORS in Frappe's
 }
 ```
 
+> **This project's Frappe instance:** `medic-demo.thedaystar.co.za`
+> Add your local dev server origin (e.g. `http://localhost:5173`) to `allow_cors` on that server.
+
 Restart gunicorn after editing:
 
 ```bash

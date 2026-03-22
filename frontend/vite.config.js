@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // DEVELOPMENT PROXY — IMPORTANT NOTE
 // ─────────────────────────────────────────────────────────────────────────────
-// The proxy below forwards all /api/* requests from the Vite dev server to your
-// local Frappe bench (http://localhost:8000). This is DEVELOPMENT ONLY.
+// The proxy below forwards all /api/* requests from the Vite dev server to the
+// Frappe instance at medic-demo.thedaystar.co.za. This is DEVELOPMENT ONLY.
 //
 // In PRODUCTION you must set up an nginx reverse proxy. Example location block:
 //
@@ -25,9 +25,9 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8000",
+        target: "https://medic-demo.thedaystar.co.za",
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
     },
   },
