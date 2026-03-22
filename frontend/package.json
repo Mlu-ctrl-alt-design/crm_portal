@@ -14,13 +14,17 @@
     "react-router-dom": "^6.30.0",
     "axios": "^1.7.0",
     "zustand": "^4.5.0",
-    "@tanstack/react-query": "^5.40.0"
+    "@tanstack/react-query": "^5.40.0",
+    "react-aria-components": "^1.15.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "vite": "^6.3.0",
     "@vitejs/plugin-react": "^4.3.0",
     "tailwindcss": "^4.1.0",
     "@tailwindcss/vite": "^4.1.0",
-    "typescript": "^5.8.0"
+    "typescript": "^5.8.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-react-aria-components": "^2.0.1"
   }
 }
